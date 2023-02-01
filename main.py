@@ -322,3 +322,25 @@ def chess(width):
         for i in range(1, 5):
             chessboard += '''  {}  {}'''.format(first * width, second * width)
     print(chessboard)
+
+
+print('''  
+            *
+           * *
+          *   *
+         *     *
+        *       *
+         *     *
+          *   *
+           * *
+            *
+
+
+
+
+
+
+
+
+
+''')
