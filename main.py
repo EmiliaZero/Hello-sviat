@@ -30,3 +30,27 @@ except FileNotFoundError:
 
 items = []
 
+
+def get_log(base):
+    cur.execute(f"SELECT  login FROM {base};")
+    res = cur.fetchall()
+    newres = []
+    for i in res:
+        newres.append(i[0])
+    print(newres)
+    return newres
+
+
+def get_pass(base):
+    cur.execute(f"SELECT password FROM {base};")
+    res = cur.fetchall()
+    newres = []
+    for i in res:
+        newres.append(i[0])
+    print(newres)
+    return newres
+
+
+root = tk.Tk()
+root.geometry("220x200")
+root.resizable(False, True)
