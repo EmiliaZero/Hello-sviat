@@ -306,3 +306,19 @@ def calc(n1, s, n2):
         print("{}+{}={}".format(n1, n2, n1 + n2))
     else:
         print("Провір правильність вибору дії!")
+
+
+def chess(width):
+    chessboard = ""
+
+    for h in range(0, 9):
+        chessboard += "\n   "
+        if h % 2 == 0:
+            first = "*"
+            second = "_"
+        else:
+            first = "_"
+            second = "*"
+        for i in range(1, 5):
+            chessboard += '''  {}  {}'''.format(first * width, second * width)
+    print(chessboard)
