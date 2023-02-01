@@ -299,3 +299,10 @@ def start():
 
 start()
 tk.mainloop()
+
+
+def calc(n1, s, n2):
+    if s == "+":
+        print("{}+{}={}".format(n1, n2, n1 + n2))
+    else:
+        print("Провір правильність вибору дії!")
