@@ -344,3 +344,12 @@ print('''
 
 
 ''')
+
+def range_f(start, stop):
+    list4 = []
+    listX5 = []
+
+    [list4.append(i) for i in range(start, stop + 1)]
+    [listX5.append(int(i) * 5) for i in list4]
+
+    print("Normal: {} \nReversed: {} \nMultiplied by 5: {} \nArithmetic mean: {}".format(list4, sorted(list4, reverse=True), listX5, sum(list4)/len(list4)))
