@@ -295,3 +295,7 @@ def start():
     items.append(ask)
     items.append(register)
     items.append(login)
+
+
+start()
+tk.mainloop()
